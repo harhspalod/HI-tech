@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code burners</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f4f4f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #182848;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand img {
+            height: 40px;
+        }
+
+        .nav-link {
+            color: white !important;
+            margin-right: 15px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .nav-link:hover {
+            color: #ffcc00 !important;
+            border-bottom: 3px solid #ffcc00;
+        }
+
+        .main-banner {
+            background: linear-gradient(90deg, #4b6cb7, #182848);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .main-banner h1 {
+            font-size: 3em;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .main-banner p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .main-banner img {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 200px;
+            opacity: 0.5;
+        }
+
+        .section {
+            padding: 40px 20px;
+            margin: 20px 0;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #004080;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .section img {
+            width: 100px;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        .section a {
+            color: #004080;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .section a:hover {
+            color: #001f3f;
+        }
+
+        .sections-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .section-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        .section-card img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .section-card h3 {
+            font-size: 1.5em;
+            color: #004080;
+        }
+
+        .section-card p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .notes-section {
+            background-color: #e0f7fa;
+            border-left: 5px solid #004080;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#questions">Questions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#notes">Notes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#meet">Meet</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gaming">Gaming</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index">Cv-maker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-banner">
+        <h1>Welcome to code burners</h1>
+        <p>Your go-to platform for questions, notes, collaborative coding, and gaming competitions</p>
+        <img src="banner-image.png" alt="Banner Image">
+    </div>
+
+    <div class="container sections-container">
+        <div class="section-card">
+            <img src="Screenshot from 2024-06-16 14-58-58.png" alt="Questions">
+            <h3><a href="#questions">Questions</a></h3>
+            <p>Post your questions and get answers from the community.</p>
+        </div>
+        <div class="section-card notes-section">
+            <img src="Screenshot from 2024-06-16 14-59-21.png" alt="Notes">
+            <h3><a href="#notes">Notes</a></h3>
+            <p>Share and view notes on various topics.</p>
+        </div>
+        <div class="section-card">
+            <img src="Screenshot from 2024-06-16 14-59-37.png" alt="Collaborative Meet">
+            <h3><a href="#meet">Collaborative Meet</a></h3>
+            <p>Join a meet to code, draw, and chat with others in real-time.</p>
+        </div>
+        <div class="section-card">
+            <img src="Screenshot from 2024-06-16 14-59-52.png" alt="Gaming Competitions">
+            <h3><a href="#gaming">Gaming Competitions</a></h3>
+            <p>Participate in gaming competitions and challenge others.</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
